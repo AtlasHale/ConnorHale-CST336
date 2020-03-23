@@ -1,0 +1,39 @@
+<%- include('templates/header') -%>
+
+<h1> Showing Results For: <%=key%> </h1>
+<div>
+    <form action="/results" method="GET">
+        Keyword: <input type="text" name="keyword">
+        <button class="btn btn-secondary"> Search! </button>
+        <br>
+        <label>Select Alignment:</label>
+        <select id="align" name="align">
+            <option value="horizontal">Horizontal</option>
+            <option value="vertical">Vertical</option>
+        </select>
+    </form> <br>
+</div>
+
+<div class="container">
+   <div class="row">
+        <div class="column">
+            <p>Likes: <%= images.hits[startIndex].likes %></p>
+            <img src='<%= images.hits[startIndex].largeImageURL %>' width='250'>
+        </div>
+        <div class="column">
+            <p>Likes: <%= images.hits[startIndex+2].likes %></p>
+            <img src='<%= images.hits[startIndex+2].largeImageURL %>' width='250'>
+        </div>
+        <div class="column">
+            <p>Likes: <%= images.hits[startIndex+4].likes %></p>
+            <img src='<%= images.hits[startIndex+4].largeImageURL %>' width='250'>
+        </div>
+        <div class="column">
+            <p>Likes: <%= images.hits[startIndex+6].likes %></p>
+            <img src='<%= images.hits[startIndex+6].largeImageURL %>' width='250'>
+        </div>
+    </div> 
+</div>
+
+
+<%- include('templates/footer') -%>

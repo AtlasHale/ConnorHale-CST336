@@ -1,0 +1,23 @@
+<%- include('templates/header') -%>
+
+<div class="container col-sm-12 vert-center">
+    <div>
+        <form action="/results" method="GET">
+            Keyword: <input type="text" name="keyword">
+            <button class="btn btn-secondary"> Search! </button>
+            <br>
+            <label>Select Alignment:</label>
+            <select id="align" name="align">
+                <option value="horizontal">Horizontal</option>
+                <option value="vertical">Vertical</option>
+            </select>
+        </form> <br>
+    </div>
+    <img src='<%=image1%>' width='250'>    
+    <img src='<%=image2%>' width='250'>   
+    <img src='<%=image3%>' width='250'>
+    <img src='<%=image4%>' width='250'>
+
+</div>
+        
+<%- include('templates/footer') -%>

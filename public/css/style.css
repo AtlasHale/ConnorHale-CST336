@@ -1,0 +1,56 @@
+.planet {
+    width: 100%;
+}
+
+body {
+    background-color: #CBE2F6;
+    text-align: center;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: table;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.active {
+  background-color: #9aadad;
+}
+
+li a:hover:not(.active) {
+  background-color: #9aadad;
+}
+
+
+.vert-center {
+  margin-top: 20vh;
+  margin-bottom: 2vh;
+}
+
+.home-img {
+  margin-top: 2vh;
+  height: 28vw;
+}
