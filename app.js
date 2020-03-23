@@ -1,4 +1,5 @@
 const express = require("express");
+const port = 8080;
 const app = express();
 app.engine("html", require("ejs").renderFile);
 app.use(express.static("public"));
@@ -26,6 +27,6 @@ app.get("/mars", function(req, res){
 
 
 //server listen
-app.listen("8080", "127.0.0.1", function(){
-    console.log("Express server is running on port 8080");
+app.listen(process.env.PORT || port, function(){
+    console.log("Express server is running...");
 });
