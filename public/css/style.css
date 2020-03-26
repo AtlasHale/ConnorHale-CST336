@@ -1,0 +1,17 @@
+body {
+    background-color: #d8e9ed;
+}
+
+.cover {
+    border: 15px;
+    border-radius: 10px;
+}
+
+.info {
+    font-size: 25px;
+}
+
+
+.copy {
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+<%- include('templates/header') -%>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Open Library Results</h1>
+    </div>
+    <div id="books">
+        <div class="row">
+			<div class="col-sm-4">
+			    <img class="cover" src=<%=data["ISBN:"+isbn]["cover"]["large"]%> >
+			</div>
+			<div class="col-sm-6">
+				<div id="title" class="info">Title: <%=data["ISBN:"+isbn].title%></div>
+				<div id="Author" class="info">Author: <%=data["ISBN:"+isbn]["authors"][0]["name"]%></div>
+				<div id="Publish-Year" class="info">Year Published: <%=data["ISBN:"+isbn].publish_date%> </div>
+				<div id="Publisher" class="info">Publisher: <%=data["ISBN:"+isbn]["publishers"][0]["name"]%></div>
+				<div id="ISBN" class="info">ISBN: <%=isbn%></div>
+				<div id="Pages" class="info">Pages: <%=data["ISBN:"+isbn].number_of_pages %></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%- include('templates/footer') -%>
