@@ -1,0 +1,67 @@
+body {
+    background-color: #FFFFFF;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://img5.goodfon.com/wallpaper/nbig/4/f1/chashka-bliudtse-chai-listia-tsvety-fon-chiornyi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.side-img{
+  width: 100%;
+}
+.tea-header {
+  margin-top: 20vh;
+  color: white;
+}
+.center {
+  text-align: center;
+}
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li { 
+    float: left;
+}
+
+.active {
+  background-color: #9aadad;
+}
+
+li a:hover:not(.active) {
+  background-color: #9aadad;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

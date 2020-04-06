@@ -1,0 +1,23 @@
+<%- include('templates/header') -%>
+
+<div class="container">
+    <h1>
+        Tea Search Results
+    </h1>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="img-fluid" src="<%=pic%>" alt="Tea"/>
+        </div>
+        <div class="col-sm-8 center">
+            <h2><%= result.name %></h2>
+            <h5>Address: <%= result.vicinity %></h5>
+            <h5>Rating: <%= result.rating %></h5>
+            <h5>Open: <%= open %></h5>
+
+        </div>
+    </div>
+</div>
+
+
+<%- include('templates/footer') -%>

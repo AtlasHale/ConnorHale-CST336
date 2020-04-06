@@ -1,0 +1,51 @@
+<%- include('templates/header') -%>
+
+<div class="masthead">
+    <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-light tea-header">Explore Tea</h1>
+          </div>
+        </div>
+    </div>
+</div>
+<section class="py-5">
+    <h2 class="font-weight-light center">
+        Origins
+    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-6">
+                <img class="side-img" src="https://www.umiteasets.com/blog/wp-content/uploads/2017/08/Lu-Yu-and-The-Classic-of-Tea.jpg">
+            </div>
+            <div class="column col-sm-6">
+                Tea originates from southern China, however the exact date is unknown.
+                Some origin myths go back as far as 4 millenia, citing Shennong, an emperor 
+                thought of as a god of farming and medicine, as the first tea drinker. <br><br>The first 
+                recorded mention of tea occured in 200 BCE, where an herbal infusion was 
+                mentioned in a dictionary. However, the first published work solely about
+                tea was written between 760 and 762 CE, by Lu Yu, who grew up in Buddhist 
+                temple, though he rejected becoming a monk and ran away at the age of 14.
+                He went on to cultivate tea all through his life, and his manual
+                <cite>Tea Classic</cite> elaborates methods to cultivate, harvest, process,
+                and prepare tea. 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <h2 class="font-weight-light center">
+        Find Tea Near You
+    </h2>
+    <p class="center">
+        Enter your zip code to find a tea shop near you
+    </p>
+    <div class="center">
+        <form action="/results" method="GET">
+        <input type="number" name="zipcode" min="10000" max="99999">
+        <button class="btn btn-secondary">Search</button>
+        <br>
+    </div>
+</section>
+<%- include('templates/footer') -%>
